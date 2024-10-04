@@ -17,7 +17,6 @@ public class Main {
             int cube = number * number * number;
             System.out.println(number + "\t" + square + "\t\t" + cube);
         }
-
         scanner.close();
     }
 }
