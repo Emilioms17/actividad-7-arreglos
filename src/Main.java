@@ -5,12 +5,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int[] numbers = new int[20];
 
-        System.out.println("Introduce 20 números enteros:");
+        System.out.println("introduce 20 números enteros:");
         for (int i = 0; i < 20; i++) {
             System.out.print("Número " + (i + 1) + ": ");
             numbers[i] = scanner.nextInt();
         }
-        System.out.println("\nNúmero\tCuadrado\tCubo");
+        System.out.println("\nnúmero\tcuadrado\tcubo");
         for (int i = 0; i < 20; i++) {
             int number = numbers[i];
             int square = number * number;
