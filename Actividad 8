@@ -1,0 +1,20 @@
+import Perro.Perro;
+
+public class Main {
+    public static void main(String[] args) {
+        Perro p = new Perro();
+
+
+        p.setEdad(4);
+        p.setPeso(18.3);
+        p.setEstatura(72);
+
+        System.out.println("edad: " + p.getEdad());
+        System.out.println("peso: " + p.getPeso() + " kg");
+        System.out.println("estatura: " + p.getEstatura() + " metros");
+
+
+        p.comer("croquetas", 200);
+        System.out.println(p.ladrar());
+    }
+}
