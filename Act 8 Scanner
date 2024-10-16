@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class PerroMain {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        Perro perro1 = new Perro();
+        System.out.println("datos perro 1:");
+
+        System.out.print("edad: ");
+        perro1.setEdad(scanner.nextInt());
+
+        System.out.print("peso: ");
+        perro1.setPeso(scanner.nextDouble());
+
+        System.out.print("estatura (m): ");
+        perro1.setEstatura(scanner.nextDouble());
+
+        scanner.nextLine();
+        Perro perro2 = new Perro();
+        System.out.println("\n datos perro 2:");
+
+        System.out.print("edad: ");
+        perro2.setEdad(scanner.nextInt());
+
+        System.out.print("peso: ");
+        perro2.setPeso(scanner.nextDouble());
+
+        System.out.print("estatura (en metros): ");
+        perro2.setEstatura(scanner.nextDouble());
+
+        scanner.nextLine();
+        System.out.println("\n perro 1:");
+        perro1.comer("croquetas", 300);
+        System.out.println(perro1.ladrar());
+
+        System.out.println("\n perro 2:");
+        perro2.comer("carne", 200);
+        System.out.println(perro2.ladrar());
+
+        scanner.close();
+    }
+}
