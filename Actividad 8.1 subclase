@@ -1,0 +1,49 @@
+package Perro;
+public class Perro {
+        private int edad;
+        private double peso;
+        private double estatura;
+
+        // Constructor vacío
+        public Perro() {
+        }
+
+        public Perro(int edad, double peso, double estatura) {
+            this.edad = edad;
+            this.peso = peso;
+            this.estatura = estatura;
+        }
+
+        public int getEdad() {
+            return edad;
+        }
+
+        public void setEdad(int edad) {
+            this.edad = edad;
+        }
+
+        public double getPeso() {
+            return peso;
+        }
+
+        public void setPeso(double peso) {
+            this.peso = peso;
+        }
+        public double getEstatura() {
+            return estatura;
+        }
+
+        public void setEstatura(double estatura) {
+            this.estatura = estatura;
+        }
+
+       //comer
+        public void comer(String tipoComida, double cantidadGramos) {
+            System.out.println("el perro está comiendo " + cantidadGramos + " g " + tipoComida);
+        }
+
+        // ladrar
+        public String ladrar() {
+            return "guau guau";
+        }
+    }
